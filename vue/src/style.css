@@ -1,0 +1,37 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+body {
+    margin: 100px 0 0 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(13, 4, 39) 0%, rgb(30, 9, 43) 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.gen2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 5em;
+    color: #47c350;
+    text-shadow: 0 0 20px rgb(76, 255, 85);
+    animation: levitate 3s ease-in-out infinite alternate;
+}
+
+@keyframes levitate {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}

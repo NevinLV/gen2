@@ -1,4 +1,3 @@
-from etude.common_py import Ed25519PublicKey
 from pydantic_settings import BaseSettings
 
 

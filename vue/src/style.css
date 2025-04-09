@@ -1,30 +1,44 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
 body {
-    margin: 100px 0 0 0;
+    margin: 0 0 0 0;
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg, rgb(13, 4, 39) 0%, rgb(30, 9, 43) 100%);
     overflow: hidden;
     position: relative;
 }
 
-.star {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: twinkle 1.5s infinite alternate;
+header{
+    padding: 10px;
 }
 
-@keyframes twinkle {
-    0% { opacity: 0.5; }
-    100% { opacity: 1; }
+.dark-panel{
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.bg {
+    background: rgb(12,40,36);
+    background: linear-gradient(138deg, rgba(12,40,36,1) 0%, rgba(5,17,15,1) 100%);
+}
+
+.logo{
+    color: white;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: default;
+}
+
+.accent{
+    color: #00c359;
+
 }
 
 .gen2 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 5em;
     color: #47c350;
     text-shadow: 0 0 20px rgb(76, 255, 85);
@@ -34,4 +48,212 @@ body {
 @keyframes levitate {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+button{
+    color: #cfcfcf;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-style: solid;
+    font-family: 'JetBrains Mono', sans-serif;
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0);
+    border: none
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+}
+
+.black-btn{
+    background: rgba(0, 0, 0, 0.38);
+    border-color: #ffffff;
+}
+
+.black-btn:hover{
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+}
+
+.gen-btn{
+    margin-top: -40px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #00c359;
+    color: black;
+    z-index: 100;
+}
+
+.gen-btn:hover{
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #01a148;
+    color: black;
+}
+
+.task-input{
+    background: rgba(114, 161, 140, 0.19);
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.07);
+    resize: none;
+    padding: 10px;
+    color: #c1c1c1;
+    font-family: 'JetBrains Mono', sans-serif;
+
+}
+
+.task-input:focus{
+    outline: none;
+}
+
+.main-text{
+    color: white;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.sub-text{
+    color: #d1d1d1;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+pre[class*="language-"] {
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: calc(100vh - 160px);
+}
+
+.code-theme{
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@font-face {
+    font-family: 'Disket Mono';
+    src: url('fonts/Disket-Mono-Bold.ttf') format('truetype'),
+    url('fonts/Disket-Mono-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flatiron';
+    src: url('fonts/Flatiron Casual.otf') format('opentype'),
+    url('fonts/Flatiron Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOST';
+    src: url('fonts/gost_2.304.ttf') format('truetype'),
+    url('fonts/gost_2.304_Bold_italic.ttf') format('truetype'),
+    url('fonts/gost_2.304_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ISOCPEUR';
+    src: url('fonts/ISOCPEUR.ttf') format('truetype'),
+    url('fonts/ISOCPEUR_it.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/jetbrains/JetBrainsMono-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
 }
